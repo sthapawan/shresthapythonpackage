@@ -6,9 +6,9 @@ def sequence_reader(filepath):
     #the filepath could be precondition
     #the file is in the right format
     sequence_set = dendropy.DnaCharacterMatrix.get(
-    path=filepath
-        schema = "phylip"
+        path=filepath,
+        schema="phylip"
      )
-        assert type(sequence_set) == dendropy.datamodel.charmatrixmodel.DnaCharacterMatrix
+    assert type(sequence_set) == dendropy.datamodel.charmatrixmodel.DnaCharacterMatrix
     return(sequence_set)
     
